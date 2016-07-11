@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <style>
+        body {
+            font-family: lato, arial;
+        }
+        textarea {
+            width: 300px;
+            height: 300px;
+        }
+        .axis path {
+            fill: none;
+            stroke: black;
+            stroke-width: 1.5px;
+            shape-rendering: crispEdges;
+        }
+
+        .axis text {
+            font-size: 12px;
+            fill: black;
+        }
+
+        .axis.title {
+            font-size: 14px;
+            fill: black;
+        }
+
+        .tick line {
+            stroke: black;
+            stroke-width: 1px;
+        }
+        .title {
+            fill: black;
+        }
+        .main {
+            font-size: 24px;
+        }
+        .sub {
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <textarea class="data-in"></textarea>
+    <div id="go"> go! </div>
+</div> 
+<div id="d3-container">
+
+</div>
+<script type="text/javascript" src="Grapher.js"></script>
+</body>
+</html>
